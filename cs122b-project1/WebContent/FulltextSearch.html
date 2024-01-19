@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full-Text Search</title>
+
+    <!-- jQuery is required -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 ALIGN="CENTER">Full-Text Movie Search</h1>
+    <p style="text-align: center">
+        <a class="btn btn-primary" href="/cs122b-project1-api-example/home_page.html" role="button">Home Page</a>
+        <a class="btn btn-primary" href="/cs122b-project1-api-example/cart.html" role="button">Checkout</a>
+    </p>
+
+    <!--
+    <p style="text-align: center">
+        <input type="text" name="movie" id="autocomplete"
+               class="autocomplete-searchbox form-control"
+               placeholder="Movie Title"/>
+        <input type="submit" value="Search Movie">
+    </p>
+    -->
+    <form ACTION="MovieList.html" METHOD="GET" id="ft_search_form">
+        <p style="text-align: center">
+            <input type="text" name="ft_movie_title" id="autocomplete"
+                   class="autocomplete-searchbox form-control"
+                   placeholder="Movie Title"/><br>
+            <input TYPE="SUBMIT" VALUE="Search">
+        </p>
+    </form>
+    <script src="FulltextSearch.js"></script>
+
+    <!-- Load jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

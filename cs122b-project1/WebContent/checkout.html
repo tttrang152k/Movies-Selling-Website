@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Payment Information</h1>
+<h2 align="center">Payment Details</h2>
+
+<form action="#" METHOD="POST" id="checkout_form">
+    <p style="text-align: center">
+    <input TYPE="TEXT" name="card_number" placeholder="Card Number"> <br>
+    <input TYPE="TEXT" name="first_name" placeholder="First Name"> <br>
+    <input TYPE="TEXT" name="last_name" placeholder="Last Name"> <br>
+    <input type="date" min="2000-01-01" max="2024-01-01" value="mm/dd/yyyy" name="exp_date"><br>
+    <input TYPE="SUBMIT" VALUE="Place Order">
+    </p>
+</form>
+
+<div id="checkout_error_message"></div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./checkout.js"></script>
+
+
+</body>
+</html>

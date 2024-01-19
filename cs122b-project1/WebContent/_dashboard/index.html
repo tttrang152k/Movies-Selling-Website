@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Dashboard Home Page</title>
+  <style>
+    h1 {text-align: center}
+  </style>
+</head>
+
+<style>
+    table, th, td {
+        border:1px solid black;
+        text-align: center;
+    }
+</style>
+
+<body>
+  <h1 class="display-1">Metadata</h1>
+  <p style="text-align: center">
+    <a class="btn btn-primary" href="/cs122b-project1-api-example/_dashboard/index.html" role="button">Home</a>
+    <a class="btn btn-primary" href="/cs122b-project1-api-example/_dashboard/add-star.html" role="button">Add Star</a>
+    <a class="btn btn-primary" href="/cs122b-project1-api-example/_dashboard/add-movie.html" role="button">Add Movie</a>
+    <a class="btn btn-primary" href="/cs122b-project1-api-example/MovieBrowse.html" role="button">Browse Movie</a>
+  </p>
+
+<h2>Creditcards</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>expiration</td>
+        <td>DATE</td>
+    </tr>
+</table>
+
+<h2>Customers</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>ccId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>Employees</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>fullname</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>Genres</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>Genres_In_Movies</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>genreId</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>movieId</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>Movies</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>year</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>director</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>INT</td>
+    </tr>
+</table>
+
+<h2>Ratings</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>movieID</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>rating</td>
+        <td>float</td>
+    </tr>
+    <tr>
+        <td>numVotes</td>
+        <td>INT</td>
+    </tr>
+</table>
+
+<h2>Sales</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>customerId</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>movieId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>saleDate</td>
+        <td>DATE</td>
+    </tr>
+</table>
+
+<h2>Stars</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>birthYear</td>
+        <td>INT</td>
+    </tr>
+</table>
+
+<h2>Stars_in_Movies</h2>
+<table style="width:50%">
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>starId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>movieId</td>
+        <td>VARCHAR</td>
+    </tr>
+
+</table>
+
+  <h2>id_helper</h2>
+  <table style="width:50%">
+      <tr>
+          <th>Attribute</th>
+          <th>Type</th>
+      </tr>
+      <tr>
+          <td>id</td>
+          <td>VARCHAR</td>
+      </tr>
+
+  </table>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

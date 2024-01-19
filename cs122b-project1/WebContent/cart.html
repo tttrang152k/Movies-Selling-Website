@@ -1,0 +1,54 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Fablix</title>
+</head>
+<body>
+Welcome to Fablix!
+<p id="sessionID"></p>
+<p id="lastAccessTime"></p>
+
+<a class="btn btn-primary" href="/cs122b-project1-api-example/home_page.html" role="button">Home Page</a>
+<a class="btn btn-primary" href="/cs122b-project1-api-example/MovieList.html" role="button">Movie List</a>
+<a class="btn btn-primary" href="/cs122b-project1-api-example/checkout.html" role="button">Checkout</a><br>
+
+<h2> Shopping Cart </h2>
+<div id="item_list"></div>
+
+<table id=cart_table class="table table-striped table-success table-hover">
+  <!-- Create a table header -->
+  <thead>
+  <tr>
+    <!-- Titles of each column-->
+    <th>Title</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Total Price</th>
+
+  </tr>
+  </thead>
+  <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+  <!-- Again, id "movie_table_body" is useful for jQuery to find this html element -->
+  <tbody id=cart_table_body></tbody>
+</table>
+
+<form ACTION="checkout.html" id="cart" METHOD="POST">
+  <input TYPE="SUBMIT" VALUE="Proceed to payment">
+</form>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="cart.js"></script>
+
+</body>
+</html>
