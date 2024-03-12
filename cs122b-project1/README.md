@@ -1,11 +1,6 @@
-# CS 122B Project 5 Report
 
-- # General
-    - #### Team#: Nightowls
     
-    - #### Names: Anthony Martinez and Thi Thuy Trang Tran
-    
-    - #### Project 5 Video Demo Link: https://uci.zoom.us/rec/play/pIvExg-TT_EaVQ8CVG3NmEM8dYZkLXV_qwQyy0j9B38pcDaDXzom-hSpkbM1dYLzOBxsMJQFfKAdqTgU.eXPmbJ708q8xyvtS?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fuci.zoom.us%2Frec%2Fshare%2F1l01qa_Cw-rzq7guO-SIUsqEAzBO4xUFAEgY-PBoKntDJ9mxf-g7R-xArx5Unn-u.0r9-E8nFLfnMLXYH
+    - #### Video Demo Link: https://uci.zoom.us/rec/play/pIvExg-TT_EaVQ8CVG3NmEM8dYZkLXV_qwQyy0j9B38pcDaDXzom-hSpkbM1dYLzOBxsMJQFfKAdqTgU.eXPmbJ708q8xyvtS?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fuci.zoom.us%2Frec%2Fshare%2F1l01qa_Cw-rzq7guO-SIUsqEAzBO4xUFAEgY-PBoKntDJ9mxf-g7R-xArx5Unn-u.0r9-E8nFLfnMLXYH
 
     - #### Instruction of deployment:
          To deploy falbix on any instance (master, slave, instance 1):
@@ -21,27 +16,14 @@
          7. Click on hyperlink titled "cs122b-spring21-project1-api-example" under the "Path" section of the page to navigate to newly deployed Falbix
 
 
-    Collaborations and Work Distribution:
-
-    Anthony Martinez
-    
+    Work Distribution:
+    Thi Thuy Trang Tran
     Completed:
     Task 1: Enabled Fabflix with Connection Pooling. 
     Task 2: Setup a MySQL cluster on AWS that includes a master and a slave.
-    Task 3: Setup a load balancer to balance the traffic to multiple Fabflix instances.
-
-
-    Thi Thuy Trang Tran
-        
-    Completed: 
+    Task 3: Setup a load balancer to balance the traffic to multiple Fabflix instances. 
     Task 4: Measured the performance of the keyword search feature using Apache JMeter.
-
-
-    Cooperated Work
-        
-        Peer-review 
-        Testing and Inspection
-
+    Testing and Inspection
 
 - # Connection Pooling
     - #### Include the filename/path of all code/configuration files in GitHub of using JDBC Connection Pooling.
@@ -58,12 +40,12 @@
   
     
     - #### Explain how Connection Pooling is utilized in the Fabflix code.
-        We used connection pooling in our project to reduce the cost of creating new connections to the database by keeping a "pool" of open connections that
-        can be passed around from database operation to database operation. Specifically, we have prepared statements setup in our Mysql database that utilize the
-        pooling, so we can send queries using the prepared statments to get a faster data return.
+        I used connection pooling in our project to reduce the cost of creating new connections to the database by keeping a "pool" of open connections that
+        can be passed around from database operation to database operation. Specifically, I have prepared statements setup in our Mysql database that utilize the
+        pooling, so I can send queries using the prepared statements to get a faster data return.
     
     - #### Explain how Connection Pooling works with two backend SQL.
-        Connection Pooling works with the two backend SQL databases by allowing for the speedy data retreival while also 
+        Connection Pooling works with the two backend SQL databases by allowing for the speedy data retrieval while also 
         dividing up the workload between the two database servers.
         
     
